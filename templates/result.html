@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Parser Result</title>
+</head>
+<body>
+    <h1>Resume Parser Result</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>{{ resume_data.get('name', '') }}</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>{{ resume_data.get('email', '') }}</td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td>{{ resume_data.get('phone', '') }}</td>
+        </tr>
+        <tr>
+            <th>Education</th>
+            <td>{{ resume_data.get('education', '') }}</td>
+        </tr>
+        <tr>
+            <th>Experience</th>
+            <td>{{ resume_data.get('experience', '') }}</td>
+        </tr>
+        <!-- Add more rows for other fields -->
+    </table>
+</body>
+</html>
